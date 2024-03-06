@@ -1,12 +1,12 @@
 import { useState } from "react";
 export default function ProductCard({ product }) {
   const [currentImageIndex, setImage] = useState(0);
-  const [itemsInCart, setItems] = useState(1);
+  const [itemsInCart, setItems] = useState(0);
   const [showDescription, setShow] = useState(false);
 
   const handleAddToCartClick = () => {
     setItems(itemsInCart + 1);
-    alert(`you added ${itemsInCart}`);
+    alert(`you added ${itemsInCart + 1}`);
   };
   // function nextClick() {
   //   setImage(currentImageIndex + 1);
